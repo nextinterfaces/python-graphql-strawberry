@@ -78,6 +78,27 @@ Example:
        }
    }
 
+
+
+    POST http://127.0.0.1:8000/graphql
+    
+    query {
+        getBookById(id: 1) {
+            title
+            author
+        }
+    }
+   
+   
+    POST http://127.0.0.1:8000/graphql
+    
+    mutation {
+        addBook(title: "The Great Gatsby", author: "F. Scott Fitzgerald", description: "A classic novel.") {
+            id
+            title
+        }
+    }
+
 ```
 
 ### Example Queries
