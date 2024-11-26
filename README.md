@@ -1,6 +1,19 @@
----
 
-## Installation
+# Python GraphQL Strawberry Examples
+
+This repository demonstrates examples of using the [Strawberry GraphQL](https://strawberry.rocks/) library hosted on [FastAPI](https://fastapi.tiangolo.com/) service
+
+## Project Structure
+
+- `main.py`: Entry point for the application.
+- `models.py`: Contains data models for the GraphQL schema.
+- `resolvers.py`: Houses resolver functions for GraphQL queries and mutations.
+- `queries/`: A directory for query examples or related scripts.
+- `requirements.txt`: Lists the dependencies required for the project.
+
+## Getting Started
+
+### Installation
 
 Follow these steps to set up and run the project locally:
 
@@ -44,13 +57,36 @@ Or install manually:
     pip freeze > requirements.txt
     pip list
 
-Run the service:
+### Run the service:
 
     uvicorn main:app --reload
 
+GraphGL server:
+- http://127.0.0.1:8000/graphql
 
-- OpenAPI docs:
-http://127.0.0.1:8000/redoc#
-http://127.0.0.1:8000/docs#/
+Example:
+
+```commandline
+   POST http://127.0.0.1:8000/graphql
+   
+   query {
+       allBooks {
+           id
+           title
+           author
+           description
+       }
+   }
+
+```
+
+### Example Queries
+
+You can find example queries in the `queries/` folder to test with your GraphQL server.
+
+### Swagger docs
+
+- http://127.0.0.1:8000/redoc#
+- http://127.0.0.1:8000/docs#/
 
 
