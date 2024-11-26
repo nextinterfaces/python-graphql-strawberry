@@ -1,0 +1,6 @@
+mutation {
+    addBook(title: "The Great Gatsby", author: "F. Scott Fitzgerald", description: "A classic novel.") {
+        id
+        title
+    }
+}

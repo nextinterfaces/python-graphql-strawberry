@@ -1,0 +1,6 @@
+query {
+    getBookById(id: 1) {
+        title
+        author
+    }
+}
