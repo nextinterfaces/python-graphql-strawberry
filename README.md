@@ -3,6 +3,16 @@
 
 This repository demonstrates examples of using the [Strawberry GraphQL](https://strawberry.rocks/) library hosted on [FastAPI](https://fastapi.tiangolo.com/) service
 
+GraphQL is a query language for APIs and a runtime for executing those queries. It allows clients to request only the data they need, making APIs more flexible and efficient.
+
+### Core Concepts
+
+- **Schema**: Defines the structure of your API, including types, queries, and mutations.
+- **Query**: Fetch data from the server (similar to GET in REST).
+- **Mutation**: Modify server-side data (similar to POST, PUT, DELETE in REST).
+- **Resolvers**: Functions that resolve queries and mutations by returning data.
+- **Types**: Define the shape of the data in your schema (e.g., String, Int, Boolean, Object).
+
 ## Project Structure
 
 - `main.py`: Entry point for the application.
